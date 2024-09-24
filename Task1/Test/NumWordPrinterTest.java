@@ -29,6 +29,28 @@ public class NumWordPrinterTest {
         assertEquals("OddOneOut", result);
     }
 
+    @Test
+    public void testDivisibleBy13() {
+        NumWordPrinter printer = new NumWordPrinter();
+        String result = printer.printWord(13, false);
+        assertEquals("LuckyThirteen", result);
+    }
+
+    
+    @Test
+    public void testNonDivisible() {
+        NumWordPrinter printer = new NumWordPrinter();
+        String result = printer.printWord(7, false);
+        assertEquals("OddOneOut", result);
+    }
+
+    
+    @Test
+    public void testUpperCaseOutput() {
+        NumWordPrinter printer = new NumWordPrinter();
+        String result = printer.printWord(26, true); 
+        assertEquals("EVEN", result);
+    }
     
    
 }
