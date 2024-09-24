@@ -20,6 +20,16 @@ public class NumWordPrinterTest {
         assertEquals("LuckyThirteen", result);
     }
 
+
     
+    @Test
+    public void testNonDivisible() {
+        NumWordPrinter printer = new NumWordPrinter();
+        String result = printer.printWord(7, false);
+        assertEquals("OddOneOut", result);
+    }
+
+    
+   
 }
 
