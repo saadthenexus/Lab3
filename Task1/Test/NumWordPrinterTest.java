@@ -13,7 +13,13 @@ public class NumWordPrinterTest {
         assertEquals("EvenPrimeEleven", result);
     }
 
-    
+    @Test
+    public void testDivisibleBy13() {
+        NumWordPrinter printer = new NumWordPrinter();
+        String result = printer.printWord(13, false);
+        assertEquals("LuckyThirteen", result);
+    }
+
     
 }
 
