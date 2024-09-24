@@ -20,4 +20,13 @@ public class MaxStack {
         }
     }
 
+    public void pop() {
+        if (!mainStack.isEmpty()) {
+            if (mainStack.peek().equals(maxStack.peek())) {
+                maxStack.pop();
+            }
+            mainStack.pop();
+        }
+    }
+
 }
