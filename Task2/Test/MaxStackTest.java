@@ -27,6 +27,16 @@ public class MaxStackTest {
         stack.pop();
         assertEquals(5, stack.max());
     }
+
+    @Test
+    public void testPushAndMaxAgain() {
+        MaxStack stack = new MaxStack();
+        stack.push(1);
+        stack.push(2);
+        stack.push(3);
+        stack.push(2);
+        assertEquals(3, stack.max());
+    }
     
 }
 
