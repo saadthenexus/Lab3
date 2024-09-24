@@ -1,6 +1,16 @@
 package Task2;
 
-public class MaxStack {
+import java.util.Stack;
 
+public class MaxStack {
+    
+    private Stack<Integer> mainStack;
+    private Stack<Integer> maxStack;
+
+    
+    public MaxStack() {
+        mainStack = new Stack<>();
+        maxStack = new Stack<>();
+    }
 
 }
