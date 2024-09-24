@@ -29,4 +29,11 @@ public class MaxStack {
         }
     }
 
+    public int max() {
+        if (!maxStack.isEmpty()) {
+            return maxStack.peek();
+        }
+        throw new RuntimeException("Stack is empty");
+    }
+
 }
